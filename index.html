@@ -10,46 +10,52 @@
 </head>
 <body>
   <div class="container">
-    <img src="./assets/Cash_register_illustration.png" alt="" srcset="" width="350px">
+    <img src="./assets/Cash_register_illustration.png" class="cash-regiter" alt="cash-regiter">
     <div class="main">
       <h1>Cash Register</h1>
       <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-      <label for="bill-amount" class="label">Bill Amount:</label>
-      <input type="number" id="bill-amount" class="input">
-      <button class="next" id="next">Next</button>
-      <label for="cash-given" class="label">Cash Given:</label>
-      <input type="number" id="cash-given" class="input">
-      <button class="check" id="check">Check</button>
-      <p class="message" id="message">Wash plates or bring more money😂</p>
-      <table class="cal-table">
-        <caption>
-          Return Change:
-        </caption>
-        <tbody>
-          <tr>
-            <th>NO.of notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-          </tr>
-          <tr>
-            <th>Notes</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>50</td>
-            <td>20 </td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="bill-div">
+        <label for="bill-amount" class="label">Bill Amount:</label>
+        <input type="number" id="bill-amount" class="input">
+        <button class="btn btn-next" id="next">Next</button>
+     </div>
+      <div class="cash-div">
+        <label for="cash-given" class="label">Cash Given:</label>
+        <input type="number" id="cash-given" class="input">
+        <button class="btn btn-check" id="check">Check</button>
+        <p class="message" id="message">Wash plates or bring more money😂</p>
+      </div>
+      <div class="cash-return-div">
+        <table class="cal-table">
+          <caption>
+            Return Change:
+          </caption>
+          <tbody>
+            <tr>
+              <th>NO.of notes</th>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+              <th>Notes</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>50</td>
+              <td>20 </td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <footer class=footer>
