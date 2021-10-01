@@ -4,11 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cash Counter</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+  <div class="container">
+    <img src="./assets/Cash_register_illustration.png" alt="" srcset="" width="350px">
+    <div class="main">
+      <h1>Cash Register</h1>
+      <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+      <label for="bill-amount" class="label">Bill Amount:</label>
+      <input type="number" id="bill-amount" class="input">
+      <button class="next" id="next">Next</button>
+      <label for="cash-given" class="label">Cash Given:</label>
+      <input type="number" id="cash-given" class="input">
+      <button class="check" id="check">Check</button>
+      <p class="message" id="message">Wash plates or bring more money😂</p>
+      <table class="cal-table">
+        <caption>
+          Return Change:
+        </caption>
+        <tbody>
+          <tr>
+            <th>NO.of notes</th>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+          </tr>
+          <tr>
+            <th>Notes</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>50</td>
+            <td>20 </td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer class=footer>
+    <div class="footer-top-right">
+      <h3>Social Links</h3>
+      <ul class=links>
+        <li><a href="https://www.linkedin.com/in/mayur-arde/"><img src="./assets/iconmonstr-linkedin-3.svg"
+              class="link-icon"></a></li>
+        <li><a href="https://github.com/Mayur-Arde"><img src="./assets//iconmonstr-github-3.svg" alt=""
+              class="link-icon"></a></li>
+        <li><a href="https://www.instagram.com/mayur.arde_/"><img src="./assets//iconmonstr-instagram-13.svg" alt=""
+              class="link-icon"></a></li>
+        <li><a href="mailto: mayurarde8@gmail.com"><img src="./assets/iconmonstr-email-10.svg" alt=""
+              class="link-icon"></a></li>
+      </ul>
+    </div>
+    <p class=copyright>Copyright &copy;Mayurarde</p>
+    </div>
+  </footer>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
