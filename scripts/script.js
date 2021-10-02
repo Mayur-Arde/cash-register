@@ -32,7 +32,7 @@ if( billValue > 0){
     showMessage(`Balance to return ${formatMoney(amountToBeReturned)}`, 'success');
     calculateChange(amountToBeReturned);
   }else if ( billValue === cashValue){
-    showMessage(`Balance is Zero, nothing to return`,'success');
+    showMessage(`Balance is Zero, nothing to return`);
   }else if (cashValue < billValue){
     showMessage(`Get more money`,'danger');
   }

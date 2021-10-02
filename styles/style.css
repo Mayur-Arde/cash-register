@@ -6,6 +6,7 @@
   --cyan:#7AD6C2;
   --danger:#a01922;
   --textVoilet:#663399;
+  --black:#151418;
 }
 
 * , *::after , *::before{
@@ -30,7 +31,8 @@ body{
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-color: var(--cream)
+  background-color: var(--cream);
+  color: var(--black);
 }
 
 .container{
@@ -93,8 +95,8 @@ h1{
 .input{
   margin: 0.3rem 0;
   padding: 3px;
+  border: 2px solid var(--black);
   border-radius: 5px;
-  border: 1px solid black;
   text-align: center;
   background-color: var(--cream);
   font-size: 1.2rem;
@@ -109,6 +111,7 @@ input::-webkit-inner-spin-button {
 
 .input:focus{
   outline: none;
+  border: 2px solid var(--voilet);
 }
 
 /* botton  */
@@ -123,7 +126,7 @@ input::-webkit-inner-spin-button {
 }   
 
 .btn:hover{
-  background: var(--voilet);
+  background: #7d3af0;
   will-change: transform;
   transform: translateY(2px);
 }
@@ -139,9 +142,9 @@ input::-webkit-inner-spin-button {
   color: var(--danger);
 }
 
-.success{
+/* .success{
   color: var(--textVoilet);
-}
+} */
 
 /* table  */
 .cal-table {
