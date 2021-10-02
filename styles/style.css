@@ -142,9 +142,9 @@ input::-webkit-inner-spin-button {
   color: var(--danger);
 }
 
-/* .success{
-  color: var(--textVoilet);
-} */
+.success{
+  color: var(--black);
+}
 
 /* table  */
 .cal-table {
