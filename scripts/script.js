@@ -24,18 +24,20 @@ const checkBillInput = function (){
 // function on check btn 
 const calculateCash = function(){
 hide();  
-if( bill.value > 0){
-  if (cashGiven.value > bill.value){
-   const amountToBeReturned = cashGiven.value - bill.value;
-    showMessage(`Balance to return ${formatMoney(amountToBeReturned)}`);
+let billValue = +bill.value;
+let cashValue = +cashGiven.value;
+if( billValue > 0){
+  if (cashValue > billValue){
+   const amountToBeReturned = cashValue - billValue;
+    showMessage(`Balance to return ${formatMoney(amountToBeReturned)}`, 'success');
     calculateChange(amountToBeReturned);
-  }else if ( bill.value === cashGiven.value){
-    showMessage(`Balance is Zero, nothing to return`)
-  }else{
-    showMessage(`Wash dishs or get more money`)
+  }else if ( billValue === cashValue){
+    showMessage(`Balance is Zero, nothing to return`,'success');
+  }else if (cashValue < billValue){
+    showMessage(`Get more money`,'danger');
   }
 }else{
-  showMessage(`Invalid Bill amount`);
+  showMessage(`Invalid Bill amount`,'danger');
 }
 }
 // function show(){
@@ -44,9 +46,10 @@ function hide(){
 }
 
 // show message
-function showMessage(messages){
+function showMessage(messages, colors){
   message.style.visibility = 'visible';
   message.innerText= messages;
+  message.classList.add(colors);
 }
 
 

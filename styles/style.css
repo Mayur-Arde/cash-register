@@ -4,12 +4,15 @@
   --voilet:#7C3AED;
   --cream: #fff4e7;
   --cyan:#7AD6C2;
+  --danger:#a01922;
+  --textVoilet:#663399;
 }
 
 * , *::after , *::before{
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -60,9 +63,11 @@ body{
 }
 
 h1{
-  margin: 0.5rem 0;
-  color: rgb(102, 51, 153);
+  margin: 0.5rem 0 0.6rem;
+  color: var(--textVoilet);
   text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .cash-div , .bill-div{
@@ -78,19 +83,23 @@ h1{
 
 
 .label{
-  margin: 0.7rem 0 0;
+  margin: 0.8rem 0 0;
   font-size: 18px;
   font-weight: 500;
+  font-size: 1.3rem;
 }
 
 
 .input{
-  margin: 0.2rem 0;
+  margin: 0.3rem 0;
   padding: 3px;
   border-radius: 5px;
   border: 1px solid black;
   text-align: center;
+  background-color: var(--cream);
+  font-size: 1.2rem;
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -111,14 +120,28 @@ input::-webkit-inner-spin-button {
   border-radius: 0.5rem;
   cursor: pointer;
   outline: #fff;
+}   
+
+.btn:hover{
+  background: var(--voilet);
+  will-change: transform;
+  transform: translateY(2px);
 }
 
 .message{
   margin: 1rem 0 0.5rem;
   visibility: hidden;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
+.danger{
+  color: var(--danger);
+}
+
+.success{
+  color: var(--textVoilet);
+}
 
 /* table  */
 .cal-table {
@@ -141,6 +164,7 @@ td {
   width: 0%;
   border-collapse: collapse;
   padding: 0.4rem;
+  text-align: center;
 }
 
 /* footer section */
